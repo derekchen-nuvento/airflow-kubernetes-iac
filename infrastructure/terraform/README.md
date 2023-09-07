@@ -19,7 +19,7 @@ if not working, try:
 ```
 kubectl create clusterrolebinding add-on-cluster-admin \
   --clusterrole=cluster-admin \
-  --serviceaccount=kube-system:default
+  --serviceaccount=kube-system:eks-admin
 ```
 
 

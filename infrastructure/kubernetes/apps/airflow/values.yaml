@@ -1356,7 +1356,7 @@ extraManifests: []
 pgbouncer:
   ## if the pgbouncer Deployment is created
   ##
-  enabled: true
+  enabled: false
 
   ## configs for the pgbouncer container image
   ##

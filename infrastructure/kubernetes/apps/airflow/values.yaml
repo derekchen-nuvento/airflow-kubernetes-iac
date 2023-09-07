@@ -1539,7 +1539,7 @@ externalDatabase:
 
   ## the host of the external database
   ##
-  host: airflow-postgres.cprx3nmekqfz.us-east-2.rds.amazonaws.com
+  host: airflow-postgres.cdrvoq2yrtno.us-east-2.rds.amazonaws.com
 
   ## the port of the external database
   ##

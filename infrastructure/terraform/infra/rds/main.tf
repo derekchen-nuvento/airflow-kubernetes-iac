@@ -12,11 +12,11 @@ resource "aws_db_instance" "airflow" {
   allocated_storage       = 20
   storage_type            = "gp2"
   engine                  = "postgres"
-  engine_version          = "13.3"
+  engine_version          = "13.7"
   instance_class          = "db.t3.micro"
   name                    = "airflow_db"
   username                = "airflow_admin"
-  password                = random_password.password.result
+  password                = "airflow_password"
   parameter_group_name    = "default.postgres13"
   identifier              = "airflow-postgres"
   port                    = 5432

@@ -1074,7 +1074,7 @@ dags:
   gitSync:
     ## if the git-sync sidecar container is enabled
     ##
-    enabled: true
+    enabled: false
 
     ## the git-sync container image
     ##

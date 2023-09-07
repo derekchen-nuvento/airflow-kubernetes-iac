@@ -31,6 +31,18 @@ kubectl proxy
 4. Leave the terminal running. Open browser:
 > http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:443/proxy/#/login
 
+
+### View RDS find database endpoint
+update to `externalDatabase` in `values.yaml` file
+
+### Create `airflow-ssh-git-secret` for gitsync
+```
+kubectl create secret generic \
+  airflow-ssh-git-secret \
+  --from-file=id_rsa=$HOME/.ssh/id_rsa \
+  --namespace my-airflow-namespace
+```
+
 ### Access ArgoCD UI
 1. Browser URL:
 > http://localhost:8001/api/v1/namespaces/argocd/services/https:argocd-server:443/proxy/

@@ -1552,15 +1552,15 @@ externalDatabase:
   ## the user of the external database
   ##
   user: airflow_admin
-  #password: airflow_password
+  password: airflow_password
 
   ## the name of a pre-created secret containing the external database password
   ##
-  passwordSecret: "airflow-db-auth"
+  #passwordSecret: "airflow-db-auth"
 
   ## the key within `externalDatabase.passwordSecret` containing the password string
   ##
-  passwordSecretKey: "postgresql-password"
+  #passwordSecretKey: "postgresql-password"
 
   ## extra connection-string properties for the external database
   ##
